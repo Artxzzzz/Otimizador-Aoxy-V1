@@ -60,7 +60,7 @@ def limpar_cache_navegador_func():
      
 # Desfragmentar a unidade C: necessario só para hd:
 def desfragmentar_disco_func():
-     subprocess.run("defrag C: /O", shell=True)
+     subprocess.Popen("dfrgui.exe")
      
      
 # Abrir Configurações Avançadas de Desempenho (Efeitos Visuais)

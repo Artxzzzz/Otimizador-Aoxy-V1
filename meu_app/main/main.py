@@ -440,7 +440,16 @@ try:
     with open(sobre_path, "r", encoding="utf-8") as f:
         conteudo_sobre = f.read()
 except Exception:
-    conteudo_sobre = "Arquivo 'sobre.txt' não encontrado.\nColoque-o na pasta 'info' ao lado do programa."
+    conteudo_sobre = """Este aplicativo foi desenvolvido em Tkinter puro
+                    com o objetivo de oferecer uma solução simples e prática
+                    para otimização do sistema Windows.
+
+                    Com 11 funções principais, ele reúne em um só lugar 
+                    atalhos e ferramentas que ajudam a melhorar o desempenho
+                    e facilitar a manutenção do computador:
+
+                    O foco é ser um utilitário leve, intuitivo e direto ao ponto,
+                    ajudando você a manter seu computador mais rápido, estável e organizado."""
     
 # Exibir o texto no widget
 texto_sobre = tk.Text(aba_sobre, wrap="word", bg="#2c2c44", fg="white",
