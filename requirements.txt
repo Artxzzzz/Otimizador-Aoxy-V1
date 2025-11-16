@@ -1,0 +1,3 @@
+pyinstaller>=6.0.0
+tktooltip>=1.2
+psutil>=5.9.0
