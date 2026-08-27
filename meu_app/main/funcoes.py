@@ -1,11 +1,8 @@
 import os
 import subprocess
-import psutil
 import shutil
-import tempfile
 
 
-# Desativar recursos desnecessários pode tornar o sistema mais leve e rápido===================================
 
 def desativar_recursos_func():
      os.startfile(r"C:\Windows\System32\OptionalFeatures.exe")
@@ -51,16 +48,6 @@ def limpar_arquivos_desnecessarios_func():
 def recursos_energia_func():
      subprocess.run('powercfg.cpl', shell = True)
 
-
-# Limpar o cache do navegador CHROME
-def limpar_cache_navegador_func():
-     chrome_cache = os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache")
-     limpar_arquivos_desnecessarios_func(chrome_cache)
-     print("Cache do Chrome limpo!")
-     
-# Desfragmentar a unidade C: necessario só para hd:
-def desfragmentar_disco_func():
-     subprocess.Popen("dfrgui.exe")
      
      
 # Abrir Configurações Avançadas de Desempenho (Efeitos Visuais)
@@ -106,17 +93,3 @@ def apps_inicializacao_func():
 def monitorar_temperatura_func():
      subprocess.run("resmon.exe", shell=True)
 
-#Recursos futuros-------------------------------------------------------------------------------------------------------
-    
-     
-#Liberar cache do DNS (pode acelerar internet às vezes)  
-# def limpar_cache_dns():
-#      subprocess.run('ipconfig /flushdns', shell = True) 
-     
-# resultado = subprocess.run("ipconfig /flushdns", shell=True, capture_output=True, text=True)
-
-# print("Saída:")
-# print(resultado.stdout)
-# print("Erros:")
-# print(resultado.stderr)  
-    
