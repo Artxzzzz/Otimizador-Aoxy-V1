@@ -1,15 +1,13 @@
-# PC otimizador tkinter
+# Otimizador AOXY
 
-![Screenshot](/meu_app/main/img/fundo1.png)
+![Screenshot](/meu_app/main/img/img_main.png)
 
 ---------
 Um otimizador,**Fácil e intuitivo**,
 Criado para otimizar o seu computador com algumas configurações automaticas.
 
-Atualmente, o projeto mostra apenas a **interface gráfica**, mas futuramente ele
-será integrado a scripts que usam **subprocess** e **OS** para realizar as 
+Atualmente, o projeto usa **subprocess** e **OS** para realizar as 
 otimizações reais do sistema
-
 
 ------
 ## Funcionalidades Futuras
@@ -21,8 +19,6 @@ otimizações reais do sistema
 
 ## Tecnologias usadas
 -python 3.x
-
--Tkinter (GUI)
 
 --------
 ## Autor

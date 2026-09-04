@@ -8,11 +8,18 @@ def menu():
     print("--------------  Otimizador AOXY  -----------------")
     print("====="*10)
 
-    # FUNÇÕES
-    opcoes = ['[1] ➤  Desativar recursos','[2] ➤  Desintalar apps','[3] ➤  Atualizar Drivers','[4] ➤  Limpar Arquivos Desnecessarios','[5] ➤  Recursos De Energia','[6] ➤  Configurações Visuais','[7] ➤  Limpar Prefetch','[8] ➤  Apps De Inicialização','[9] ➤  Monitorar Temperatura','[10] ➤  EXIT']
+    # LISTA DE FUNÇÕES
+
+    #Limpeza e recursos visuais
+    opcoes = ['[1] ➤  Desativar recursos','[2] ➤  Desinstalar apps','[3] ➤  Atualizar Drivers','[4] ➤  Limpar Arquivos Desnecessarios','[5] ➤  Recursos De Energia','[6] ➤  Configurações Visuais','[7] ➤  Limpar Prefetch','[8] ➤  Apps De Inicialização','[9] ➤  Monitorar Temperatura','[10] ➤  SAIR']
     for i in opcoes:
          print(i)
     print('')  
+
+    #Sistema e energia
+
+
+    #Hardware, Bios e Registros
 
 
 #Função principal para escolha de opções
@@ -41,7 +48,6 @@ def main():
            print('5- RECURSOS DE ENERGIA')
            recursos_energia_func()
            
-           
         elif escolha == '6':
            print('7- CONFIGURAÇÕES VISUAIS')
            configuracoes_visuais_func()
@@ -59,7 +65,8 @@ def main():
           monitorar_temperatura_func()
           
         else:
-          print('10- EXIT')
+          print('saindo.....')
+          break
 
 if __name__ == '__main__':
    main()  

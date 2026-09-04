@@ -2,8 +2,6 @@ import os
 import subprocess
 import shutil
 
-
-
 def desativar_recursos_func():
      os.startfile(r"C:\Windows\System32\OptionalFeatures.exe")
      
@@ -22,9 +20,8 @@ def atualizar_drives_func():
 
 def limpar_arquivos_desnecessarios_func():
      # Pastas a limpar
-     pastas = [
-     r"C:\Windows\Temp",      # Pasta Temp do sistema
-     os.environ.get('TEMP')   # Pasta Temp do usuário (%Temp%)
+     pastas = [r"C:\Windows\Temp",# Pasta Temp do sistema
+     os.environ.get('TEMP')# Pasta Temp do usuário (%Temp%)
      ]
      for pasta in pastas:
           if os.path.exists(pasta):
@@ -48,8 +45,7 @@ def limpar_arquivos_desnecessarios_func():
 def recursos_energia_func():
      subprocess.run('powercfg.cpl', shell = True)
 
-     
-     
+  
 # Abrir Configurações Avançadas de Desempenho (Efeitos Visuais)
 def configuracoes_visuais_func():
       # Usa caminho absoluto para evitar dependência do PATH
@@ -61,15 +57,13 @@ def configuracoes_visuais_func():
            # fallback: tentar chamar apenas pelo nome (em alguns sistemas funciona)
            subprocess.run("SystemPropertiesPerformance.exe", shell=True)
 
-# DELETA A PASTA PREFETCH
 
+# DELETA A PASTA PREFETCH
 def limpar_prefetch_temp_func():
-# Caminho da pasta Prefetch
      prefetch_path = r"C:\Windows\Prefetch"
 
-     # Verifica se a pasta existe
+     # Verifica se a pasta existe 
      if os.path.exists(prefetch_path):
-     # Lista os arquivos
           for file in os.listdir(prefetch_path):
                file_path = os.path.join(prefetch_path, file)
                try:
@@ -92,4 +86,7 @@ def apps_inicializacao_func():
 # Abre o monitor de recursos para monitorar a temperatura
 def monitorar_temperatura_func():
      subprocess.run("resmon.exe", shell=True)
+
+
+
 
