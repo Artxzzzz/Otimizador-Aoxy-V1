@@ -1,6 +1,6 @@
 # AOXY V1
 
-![Screenshot](/meu_app/main/img/i.jpg)
+![Screenshot](/meu_app/main/img/img.png)
 
 ---------
 O Aoxy V1 foi desenvolvido com o objetivo de simplificar e centralizar o acesso
