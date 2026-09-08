@@ -1,16 +1,27 @@
-# Otimizador AOXY
+# AOXY V1
 
-![Screenshot](/meu_app/main/img/img_main.png)
+![Screenshot](/meu_app/main/img/i.jpg)
 
 ---------
-Um otimizador,**Fácil e intuitivo**,
-Criado para otimizar o seu computador com algumas configurações automaticas.
+O Aoxy V1 foi desenvolvido com o objetivo de simplificar e centralizar o acesso
+a configurações essenciais do WINDOWS. A ferramenta reúne em um só lugar funções práticas para otimizar o desempenho
+do sistema.
 
 Atualmente, o projeto usa **subprocess** e **OS** para realizar as 
 otimizações reais do sistema
 
 ------
-## Funcionalidades 
+## Funcionalidades
+
+1- Desativar Recursos
+2- Desinstalar Apps
+3- Atualizar Drivers
+4- Limpeza das pastas (temp, %temp%)
+5- Recursos de Energia
+6- Configurações Visuais
+7- Limpar Prefetch
+8- Apps de Inicialização
+9- Monitorar Temperatura 
 
 -------
 
